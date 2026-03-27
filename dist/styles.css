@@ -1,0 +1,131 @@
+@charset "UTF-8";
+:root {
+  --primary: #6001d2; /* Modern Yahoo-lila */
+  --text: #202124;
+  --light-gray: #f8f9fa;
+  --border: #dadce0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  color: var(--text);
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.main-header {
+  text-align: center;
+  padding: 40px 0;
+  background: linear-gradient(to bottom, #fcfcfc, #fff);
+}
+
+.logo {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -2px;
+  color: var(--primary);
+}
+
+.logo span {
+  color: #ff00b8; /* En liten färgklick */
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: #5f6368;
+  margin-bottom: 30px;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type=text] {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: box-shadow 0.2s;
+}
+
+input[type=text]:focus {
+  outline: none;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+button {
+  padding: 12px 25px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.quick-links {
+  font-size: 0.85rem;
+}
+
+.quick-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+/* Grid layout för kategorier */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  display: block;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--primary);
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #5f6368;
+}
+
+/*# sourceMappingURL=styles.css.map */
